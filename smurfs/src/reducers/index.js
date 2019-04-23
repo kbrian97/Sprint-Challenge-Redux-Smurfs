@@ -2,9 +2,7 @@ import {
   FETCH_SMURFS,
   SUCCESS,
   FAILURE,
-  POST_SMURF,
-  DELETE_SMURF,
-  PUT_SMURF,
+  POST_SMURF
 } from '../actions';
 
 /*
@@ -22,7 +20,7 @@ import {
       case FETCH_SMURFS:
         return {
           ...state,
-          fetchingSmurfs: true,
+          fetchingSmurfs: true
         }
 
       case SUCCESS:
@@ -36,7 +34,7 @@ import {
         return {
           ...state,
           fetchingSmurfs: false,
-          error: action.payload,
+          error: action.payload
         }
 
       default:

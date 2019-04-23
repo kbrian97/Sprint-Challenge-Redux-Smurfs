@@ -3,7 +3,6 @@ import React from 'react';
 class SmurfForm extends React.Component {
 constructor(props){
     super(props);
-    console.log('in form', this.props);
     if (this.props.smurf) {
         this.state = {
             id: this.props.smurf.id,
